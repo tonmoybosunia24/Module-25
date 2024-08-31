@@ -26,8 +26,89 @@
         }
       </script>
 </head>
-<body>
+<body class="p-5">
     
+  <section>
+    <h1>Dom Er Ajker Special Event</h1>
+    <button onclick="console.log(7)" class="border-2 border-gray-500 p-2 mt-5">Click Me</button> <!-- (onclick="console.log(7)") এটি ব্যাবহার করা হয় ক্লিক করার পর কিছু ঘটবে তার জন্য। -->
+    <button onclick="console.log(65)" class="border-2 border-gray-500 p-2">Secend Button</button>
+    <button onclick="console.log('Third Button')" class="border-2 border-gray-500 p-2">Third Button</button>
+  </section>
+
+  <section>
+    <button onclick="document.body.style.backgroundColor= 'green' " class="border-2 border-gray-500 p-2 mt-5">Green Button</button>
+    <button onclick="makeRed()" class="border-2 border-gray-500 p-2 mt-5">Make Red</button>
+    <button id="makeBlue" class="border-2 border-gray-500 p-2 mt-5">Make Blue</button>
+    <button id="make-Purple" class="border-2 border-gray-500 p-2 mt-5">Make Purple</button>
+  </section>
+
+  <section>
+    <button id="Make-Pink" class="border-2 border-gray-500 p-2 mt-5">Make Pink</button>
+    <button id="Make-Orange" class="border-2 border-gray-500 p-2 mt-5">Make Orange</button>
+    <button id="Make-Tomato" class="border-2 border-gray-500 p-2 mt-5">Make Tomato</button>
+  </section>
+
+  <section>
+    <h2 id="Handeler-Text" class="pt-3">Defult Text</h2>
+    <p id="input-text-Display">Defult Input Text</p>
+    <input type="text" name="" id="Input-Field" class="border-2 border-gray-500 p-2 mt-2">
+    <button id="Button-Update" class="border-2 border-gray-500 p-2 mt-5">Update</button>
+    <br>
+    <button onclick="handleClick()" class="border-2 border-gray-500 p-2 mt-5">Handerler Button</button>
+    <button id="event-Listener" class="border-2 border-gray-500 p-2 mt-5">Handle event by addeventlistener</button>
+  </section>
+
+  <section>
+    <h1 class="text-2xl font-bold py-3">Please Add Your Comment</h1>
+    <div id="Comment.Container">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, magnam. Nam repellat quo saepe sed aliquam minima iusto obcaecati accusantium quidem iure sint perspiciatis odio necessitatibus, veritatis esse, consequuntur assumenda!</p>
+      <p>Dicta, sint, eum officia maiores mollitia, tempora facere id itaque illo inventore qui? In ullam porro atque est incidunt sequi, vel illo iste, tempora blanditiis quia similique nesciunt totam culpa.</p>
+      <p>Atque minus nam dolorem corrupti veritatis nihil explicabo maxime aliquam voluptate officia hic, dignissimos et repellendus modi nobis vel aspernatur quis, excepturi adipisci possimus? Ab unde obcaecati nisi dicta nam!</p>
+    </div>
+    <div>
+      <textarea class="border-2 border-gray-500 my-2" cols="60" rows="5" name="" id="New-Comment"></textarea> <br>
+      <button id="Btn-Post" class="border-2 border-gray-500 p-3">Post</button>
+    </div>
+  </section>
+
+  <section>
+    <h1 class="text-2xl font-bold pb-2">Explore More Events</h1>
+    <button id="Button-More" class="border-2 border-gray-500 p-2 mb-2">Events</button> <br>
+    <input id="Text-Field" class="border-2 border-gray-500 p-2" type="text" name="" id="">
+  </section>
+
+  <section>
+    <h1 id="Secret-Info" class="text-2xl font-bold pb-2">My Secret Info</h1>
+    <input id="delete-confirm" class="border-2 border-gray-500 p-2 mb-2" type="text" name="" placeholder="Please Type Delete"> <br>
+    <button id="Btn-Delete" disabled class="border-2 border-gray-500 p-2 mb-2">Delete</button>
+  </section>
+
+  <section id="List-Container" class="border-2 border-red-500">
+    <h1 id="" class="text-2xl font-bold pb-2">Exploring Event Bubble</h1>
+    <ul id="List-Ul" class="border-2 border-orange-500">
+      <li id="Item-1">Lorem, ipsum.</li>
+      <li id="Item-2" class="border-2 border-gray-500">Voluptatem, ratione.</li>
+      <li id="Item-3">Maiores, harum.</li>
+      <li id="Item-4">Qui, quia!</li>
+      <li id="Item-5">Perferendis, animi.</li>
+      <li id="Item-6">Accusamus, magnam?</li>
+    </ul>
+  </section>
+
+  <section class="pt-2">
+    <h1 id="" class="text-2xl font-bold pb-2">Exploring Event Delegate</h1>
+    <ul id="List-Containerr">
+      <li class="Item">Lorem, ipsum.</li>
+      <li class="Item">Optio, quia.</li>
+      <li class="Item">Ipsa, unde.</li>
+      <li class="Item">Rem, commodi.</li>
+      <li class="Item">Corrupti, ullam?</li>
+      <li class="Item">In, et?</li>
+    </ul>
+    <button id="Btn-Add-Item" class="border-2 border-gray-500 p-2 mt-2">Add Item</button>
+  </section>
+
     <script src="script.js"></script>
+    <!-- <script src="practice.js"></script> -->
 </body>
 </html>
